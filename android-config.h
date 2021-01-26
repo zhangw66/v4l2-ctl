@@ -149,7 +149,7 @@
 #include <stdlib.h>
 
 /* Find the first occurrence of C in S or the final NUL byte.  */
-static inline char *strchrnul (const char *s, int c_in)
+inline const char *strchrnul (const char *s, int c_in)
 {
   const unsigned char *char_ptr;
   const unsigned long int *longword_ptr;
@@ -318,7 +318,7 @@ static inline char *strchrnul (const char *s, int c_in)
    not part of TOKENS return in *VALUEP beginning of unknown
    suboption.  On exit *OPTIONP is set to the beginning of the next
    token or at the terminating NUL character.  */
-static inline int
+inline int
 getsubopt (char **optionp, char *const *tokens, char **valuep)
 {
   char *endp, *vstart;

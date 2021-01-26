@@ -7,7 +7,7 @@ struct mbus_name {
 
 static struct mbus_name mbus_names[] = {
 	{ "Fixed", MEDIA_BUS_FMT_FIXED },
-#include "media-bus-format-names.h"
+//#include "media-bus-format-names.h"
 	{ nullptr, 0 }
 };
 
